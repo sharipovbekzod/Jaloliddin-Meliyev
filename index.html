@@ -54,7 +54,7 @@
                 <p class="hero__countdown-title">bepul qo’shilish vaqti:</p>
 
                 <div class="hero__countdown">
-                    <span class="hero__countdown-number" id="countdownMinutes">01</span>
+                    <span class="hero__countdown-number" id="countdownMinutes">02</span>
                     <span class="hero__countdown-number" aria-hidden="true">:</span>
                     <span class="hero__countdown-number" id="countdownSeconds">00</span>
                 </div>
@@ -194,7 +194,7 @@
     <script defer src="/js/phoneFormatter.js"></script>
     <script defer src="/js/app.js"></script>
     <script defer>
-     (()=>{const t=document.getElementById("countdownMinutes"),n=document.getElementById("countdownSeconds");if(!t||!n)return;let e=60;const o=()=>{const o=Math.floor(e/60),d=e%60;t.textContent=String(o).padStart(2,"0"),n.textContent=String(d).padStart(2,"0")};o(),window.setInterval(()=>{0!==e&&(e-=1,o())},1e3)})();
+     (()=>{const t=document.getElementById("countdownMinutes"),n=document.getElementById("countdownSeconds");if(!t||!n)return;let e=120;const o=()=>{const o=Math.floor(e/60),d=e%60;t.textContent=String(o).padStart(2,"0"),n.textContent=String(d).padStart(2,"0")};o(),window.setInterval(()=>{0!==e&&(e-=1,o())},1e3)})();
     </script>
 </body>
 
