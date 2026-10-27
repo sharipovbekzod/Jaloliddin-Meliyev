@@ -1,5 +1,5 @@
 const SHEET_URL =
-  "https://script.google.com/macros/s/AKfycbzNfVg7MO_ICDrAXYkV4g2nmY-EepzaW7TOapR60hW6oX98WAOscVBjVoOQz6-HwTL3/exec";
+  "https://script.google.com/macros/s/AKfycbz7YqxMBmESYYaejPN35hxSYGZxVFg0U2P_bmJ9TDRTtaPXfZBNVHp3LU9SFJUsliCj/exec";
 
 async function sendFormData() {
   const raw = localStorage.getItem("formData");
