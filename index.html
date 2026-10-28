@@ -199,6 +199,7 @@ src="https://www.facebook.com/tr?id=1134192138998438&ev=PageView&noscript=1"
 
     <script defer src="/js/phoneFormatter.js"></script>
     <script defer src="/js/app.js"></script>
+    <script defer>(function(){document.querySelectorAll(".registerBtn").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();if(typeof fbq==="function")fbq("track","Purchase",{value:100000,currency:"UZS"});setTimeout(function(){window.location.href=b.href},300)})})})();</script>
     <script defer>
      (()=>{const t=document.getElementById("countdownMinutes"),n=document.getElementById("countdownSeconds");if(!t||!n)return;let e=119;const o=()=>{const o=Math.floor(e/60),d=e%60;t.textContent=String(o).padStart(2,"0"),n.textContent=String(d).padStart(2,"0")};o(),window.setInterval(()=>{0!==e&&(e-=1,o())},1e3)})();
     </script>
