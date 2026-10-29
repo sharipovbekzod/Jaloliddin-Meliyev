@@ -213,7 +213,21 @@ src="https://www.facebook.com/tr?id=1642112917318433&ev=PageView&noscript=1"
 
     <script defer src="/js/phoneFormatter.js"></script>
     <script defer src="/js/app.js"></script>
-    <script defer>(function(){document.querySelectorAll(".registerBtn").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();if(typeof fbq==="function")fbq("track","Purchase",{value:100000,currency:"UZS"});setTimeout(function(){window.location.href=b.href},300)})})})();</script>
+    <script defer>
+  (function() {
+    document.querySelectorAll(".registerBtn").forEach(function(b) {
+      b.addEventListener("click", function(e) {
+        e.preventDefault();
+        if (typeof fbq === "function") {
+          fbq("track", "Purchase", { value: 10, currency: "USD" });
+        }
+        setTimeout(function() {
+          window.location.href = b.href;
+        }, 300);
+      });
+    });
+  })();
+</script>
 </body>
 
 </html>
